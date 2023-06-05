@@ -1,0 +1,80 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMjKFRpU+qTO86lL4HSspYW",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/VIDEO2023/VIDEO2023/blob/main/Numpy_py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "cjfc7u4NPvEA"
+      },
+      "outputs": [],
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "arreglo=np.array([30,2100,300,2.4])\n",
+        "\n",
+        "numeroMaximo=max(arreglo)\n",
+        "print(f\"El numero maximo es:{numeroMaximo}\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "#declarar el arreglo \n",
+        "\n",
+        "arreglo=np.array ([(10,20,30),\n",
+        "                  [40,50,60],\n",
+        "                  [70,80,10]])\n",
+        "totalFilas=len(arreglo)\n",
+        "\n",
+        "totalColumnas=len(arreglo[0])\n",
+        "\"\"\"\n",
+        "print(\"El total de las filas es:\",totalFilas)\n",
+        "print(\"El total de las columnas es:\",totalColumnas)\n",
+        "\"\"\"\n",
+        "columnaEspecifica= 1\n",
+        "\n",
+        "SumaColumna= 0\n",
+        "for fila in arreglo:\n",
+        "  SumaColumna=+fila[columnaEspecifica]\n",
+        "  \n",
+        "  promedio=SumaColumna / totalFilas\n",
+        "\n",
+        "  print(\"El promedio de la columna\",columnaEspecifica,\"es\",promedio)\n"
+      ],
+      "metadata": {
+        "id": "M0NnsjknRX5e"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
